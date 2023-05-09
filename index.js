@@ -25,6 +25,7 @@ function playerSelection() {
 
 // Function for playing 1 round
 function playRound(playerSelection, computerSelection) {
+  // Decides who the winner is and is adding up the score
   if (playerSelection === computerSelection) {
     return "Tie!";
   } else if (playerSelection === "rock" && computerSelection === "paper") {
@@ -50,13 +51,16 @@ function playRound(playerSelection, computerSelection) {
 
 // Function for starting the game
 function game() {
+  // Game runs as long as nobody has a score of 5
   while (playerScore !== 5 && computerScore !== 5) {
     let plChoice = playerSelection();
     let CpChoice = getComputerChoice();
     let result = playRound(plChoice, CpChoice);
+    console.clear();
     console.log(result);
     console.log(`Your Score: ${playerScore} Computer Score: ${computerScore}`);
   }
+  // Displays end result
   if (playerScore === 5) {
     console.log("You are the Winner!");
   } else if (computerScore === 5) {
