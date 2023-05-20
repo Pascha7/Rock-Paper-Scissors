@@ -1,11 +1,51 @@
+/* Resetting default margin and padding */
 * {
   margin: 0;
   padding: 0;
 }
-
+/*  Setting the background-image */
 body {
   background-image: url(pictures/dungeon.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
+  color: #fff;
+  font-family: "Creepster", sans-serif;
+}
+/* specifying the margin of every section */
+section {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* !First section */
+/* Styling the starter text */
+.starterText {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+.starterText:first-child {
+  margin-top: 40px;
+}
+/* Create distance between starter text and play buttons */
+.starterText:last-child {
+  margin-bottom: 100px;
+}
+
+/* !Second section */
+/* Styling the rock paper scissors buttons */
+
+.playBtnCon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.playBtn img {
+  border-radius: 10px;
+  cursor: pointer;
+  border: 5px solid grey;
+  width: 175px;
+  display: block;
 }

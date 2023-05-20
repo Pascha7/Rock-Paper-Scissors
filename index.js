@@ -3,6 +3,24 @@ let validOptions = ["rock", "paper", "scissors"];
 // Initial score
 let playerScore = 0;
 let computerScore = 0;
+// Starter text animation
+
+const starterText = document.querySelectorAll(`.starterText`);
+console.log(starterText);
+starterText.forEach((starterText) => {
+  const text = starterText.textContent;
+  starterText.textContent = "";
+  for (let i = 0; i < text.length; i++) {
+    setTimeout(() => {
+      starterText.textContent += text[i];
+    }, 90 * i);
+  }
+});
+
+// Reference to rock paper scissors buttons
+const rockBtn = document.querySelector(`.rockBtn`);
+const paperBtn = document.querySelector(`.paperBtn`);
+const scissorsBtn = document.querySelector(`.scissorsBtn`);
 
 // The function for the computer selection
 function getComputerChoice() {
