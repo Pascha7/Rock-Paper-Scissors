@@ -65,10 +65,10 @@ function game() {
     }
   }
 
-  // function endGame() {
-  //   playerScore = 0;
-  //   computerScore = 0;
-  // }
+  function endGame() {
+    playerScore = 0;
+    computerScore = 0;
+  }
 
   rockBtn.addEventListener("click", () => handlePlayerSelection("rock"));
   paperBtn.addEventListener("click", () => handlePlayerSelection("paper"));
