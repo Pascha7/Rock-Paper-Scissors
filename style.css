@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
 }
-/*  Setting the background-image */
+
+/* Setting the background-image */
 body {
   background-image: url(pictures/dungeon.jpg);
   background-position: center;
@@ -12,13 +13,14 @@ body {
   color: #fff;
   font-family: "Creepster", sans-serif;
 }
-/* specifying the margin of every section */
+
+/* Specifying the margin of every section */
 section {
   width: 900px;
   margin: 0 auto;
 }
 
-/* !First section */
+/* First section */
 /* Styling the starter text */
 .starterText {
   font-size: 3rem;
@@ -34,9 +36,8 @@ section {
   margin-bottom: 100px;
 }
 
-/* !Second section */
+/* Second section */
 /* Styling the rock paper scissors buttons */
-
 .playBtnCon {
   display: flex;
   justify-content: space-evenly;
@@ -48,4 +49,44 @@ section {
   border: 5px solid grey;
   width: 175px;
   display: block;
+}
+
+/* Score Section */
+.scoreSection {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.scoreSection h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+}
+
+.score div {
+  margin: 0 20px;
+}
+
+.playerScore,
+.computerScore {
+  font-size: 1.5rem;
+}
+
+/* Result Section */
+.resultSection {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.resultSection h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#roundResult {
+  font-size: 1.5rem;
 }
