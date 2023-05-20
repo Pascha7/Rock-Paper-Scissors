@@ -65,16 +65,10 @@ function game() {
     }
   }
 
-  function endGame() {
-    if (playerScore === 5) {
-      console.log("You are the Winner!");
-    } else if (computerScore === 5) {
-      console.log("You are a loser");
-    }
-
-    playerScore = 0;
-    computerScore = 0;
-  }
+  // function endGame() {
+  //   playerScore = 0;
+  //   computerScore = 0;
+  // }
 
   rockBtn.addEventListener("click", () => handlePlayerSelection("rock"));
   paperBtn.addEventListener("click", () => handlePlayerSelection("paper"));
