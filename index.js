@@ -55,9 +55,6 @@ function game() {
   function handlePlayerSelection(playerChoice) {
     const computerChoice = getComputerChoice();
     const result = playRound(playerChoice, computerChoice);
-    console.clear();
-    console.log(result);
-    console.log(`Your Score: ${playerScore} Computer Score: ${computerScore}`);
 
     document.getElementById("playerScore").textContent = playerScore;
     document.getElementById("computerScore").textContent = computerScore;
@@ -67,8 +64,6 @@ function game() {
       endGame();
     }
   }
-
-  // ... Rest of your code ...
 
   function endGame() {
     if (playerScore === 5) {
